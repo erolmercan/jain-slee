@@ -24,6 +24,7 @@
 	<property name="h2.distro.jar.path" value="h2-${h2.version}.jar" />
 	<available file="${ant.file.restcomm.release}/../${h2.distro.jar.path}" property="got.h2" />
 
+	<property name="oplavus.url" value="http://localhost/oplavus.com.tr/sigtran/repo/" />
 	<property name="cloudbees.url" value="https://mobicents.ci.cloudbees.com" />
 
 	<!-- Diameter -->
@@ -32,7 +33,7 @@
 	<property name="diameter.version" value="1.7.0.${diameter.build}"/>
 	<property name="diameter.zip" value="restcomm-diameter-mux-wildfly-${diameter.version}.zip"/>
 	<property name="diameter.download.url"
-			  value="${cloudbees.url}/job/RestComm-jDiameter-1.x/${diameter.build}/artifact/release/${diameter.zip}" />
+			  value="${oplavus.url}/job/RestComm-jDiameter-1.x/${diameter.build}/artifact/release/${diameter.zip}" />
 	<property name="diameter.distro.zip.path" value="restcomm-diameter.zip" />
 
 	<!-- SS7 -->
@@ -40,7 +41,7 @@
 	<property name="ss7.version" value="8.0.${ss7.build}"/>
 	<property name="ss7.zip" value="restcomm-jss7-${ss7.version}.zip"/>
 	<property name="ss7.download.url"
-			  value="${cloudbees.url}/job/Restcomm-jSS7/${ss7.build}/artifact/release/${ss7.zip}" />
+			  value="${oplavus.url}/job/Restcomm-jSS7/${ss7.build}/artifact/release/${ss7.zip}" />
 	<property name="ss7.distro.zip.path" value="restcomm-ss7.zip" />
 
 	<!-- SMPP Extensions -->
@@ -48,7 +49,7 @@
 	<property name="smppext.version" value="1.0.${smppext.build}"/>
 	<property name="smppext.zip" value="restcomm-smpp-extensions-${smppext.version}.zip"/>
 	<property name="smppext.download.url"
-			  value="${cloudbees.url}/job/Restcomm-SMPP-Extensions/${smppext.build}/artifact/release/${smppext.zip}" />
+			  value="${oplavus.url}/job/Restcomm-SMPP-Extensions/${smppext.build}/artifact/release/${smppext.zip}" />
 	<property name="smppext.distro.zip.path" value="restcomm-smpp-extensions.zip" />
 
 	<taskdef onerror="fail" resource="net/sf/antcontrib/antlib.xml">
